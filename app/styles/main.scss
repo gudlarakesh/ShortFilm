@@ -1,0 +1,95 @@
+body{
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#headName{
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url("../images/one.jpg");
+  .mainHead{
+    margin-top: 25%;
+  };
+  .btn{
+    color: red;
+    cursor: pointer;
+    display: block;
+    font-size:16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 auto 2em;
+    max-width: 160px; 
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%; 
+
+    @media(min-width: 400px) {
+      display: inline-block;
+      margin-right: 2.5em;
+
+      &:nth-of-type(even) {
+        margin-right: 0;
+      }
+    }
+
+    @media(min-width: 600px) {
+
+      &:nth-of-type(even) {
+        margin-right: 2.5em;
+      }
+
+      &:nth-of-type(5) {
+        margin-right: 0;
+      }
+
+    }
+
+    &:hover { text-decoration: none; }
+  };
+  .mainButton {
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    opacity: 1;
+  } 
+
+  .mainButton:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388; 
+  }
+  .videoButton{
+    // text-align: right;
+  };
+  .aboutBotton{
+    // text-align: left;
+    a{
+      color: red;
+      text-decoration: none;
+    }
+  }
+}
+
+
+#about{
+  height: 100%;
+  width: 100%; 
+  .headImage{
+    position: absolute;
+    background-image: url("../images/short-films.png");
+    height: 45%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
